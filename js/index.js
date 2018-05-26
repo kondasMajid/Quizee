@@ -33,6 +33,8 @@
                         var showQuiz = document.getElementById('showQuiz');
                         var showAnswers = document.getElementById('showAnswers');
                         var answersAsHtml = allQuestions[index].anwsers.map(ans => `<input type="radio" value="${ans}">${ans}</input>`).join(" ");
+                        
+                        //.map(function (answer){       retu-+rn '<input type="radio" name="answers" value="' + answer + '"/>' + answer
                         var  startQuiz = document.getElementById('startQuiz');
                         var akwaaba = document.getElementById('akwaaba');
 
@@ -42,33 +44,10 @@
 
                         startQuiz.innerHTML = "Next";
                         akwaaba.innerHTML = "Game started.........";
-                        //next.style.display = "block";
-                        // startQuiz.addEventListener('click', function(){
-                                //  nexts.style.display = 'none';  });
-                        if(answersAsHtml == allQuestions[2].checked){
+                        
+                        if(allQuestions.anwsers == correctAnswer.checked){
                                 alert("Hey");
                       }
-                           
-
-
-                        //     let QuizeeContainer = document.getElementById('QuizeeContainer');
-                        //     var  showQuiz = document.getElementById('showQuiz');
-                        //     let  showAnswers = document.getElementById('showAnswers');
-                        //     let akwaaba = document.getElementById('akwaaba');
-                        //     let  startQuiz = document.getElementById('startQuiz');
-                        //     var next = document.getElementById('next');
-                        //     showQuiz.style.color = 'red';
-                           
-
-                      ////.map(function (answer){       retu-+rn '<input type="radio" name="answers" value="' + answer + '"/>' + answer
-                                        
-                                //})    
-                        //}; 
-                        // startQuiz.addEventListener('click', function(){
-                                
-                        //         nexts.style.display = 'none';
-                               
-                        // });
-                         // displayQuestions().push(output)
+                          
                 
                         }
