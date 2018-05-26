@@ -46,7 +46,7 @@
                         akwaaba.innerHTML = "Game started.........";
                         
                         if(allQuestions.anwsers == correctAnswer.checked){
-                                alert("Hey");
+                                alert("checked");
                       }
                           
                 
